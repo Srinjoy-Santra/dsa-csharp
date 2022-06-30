@@ -1,10 +1,9 @@
-using dsa.leetcode;
-using Xunit;
+using DSA.leetcode;
 
 /*
     Best Practices : https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
 */
-namespace tests
+namespace Test
 {
     public class UTBestTimeToBuyAndSell
     {

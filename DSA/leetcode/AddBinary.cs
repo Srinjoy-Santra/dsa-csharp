@@ -1,9 +1,8 @@
-using System;
 using System.Text;
 
 // https://leetcode.com/problems/add-binary/
 
-namespace dsa.leetcode
+namespace DSA.leetcode
 {
     public class AddBinary
     {

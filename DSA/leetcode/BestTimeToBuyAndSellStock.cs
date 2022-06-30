@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
-namespace dsa.leetcode
+namespace DSA.leetcode
 {
     public class BestTimeToBuyAndSellStock
     {

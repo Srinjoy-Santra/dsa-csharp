@@ -1,7 +1,6 @@
-using dsa.grokking;
-using Xunit;
+using DSA.grokking;
 
-namespace tests;
+namespace Test;
 
 public class UTMaxSumSubArrayOfSizeK
 {

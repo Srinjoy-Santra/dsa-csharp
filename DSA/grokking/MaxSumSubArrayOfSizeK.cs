@@ -1,4 +1,4 @@
-namespace dsa.grokking;
+namespace DSA.grokking;
 
 using System;
 /*
@@ -22,7 +22,6 @@ public class MaxSumSubArrayOfSizeK
                 start++;
             }
         }
-
         return maxSum;
     }
 
