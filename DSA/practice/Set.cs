@@ -1,9 +1,8 @@
-using System;
-using System.Collections.Generic;
+
 
 // https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.sortedset-1?view=net-6.0
 
-namespace dsa.practice
+namespace DSA.practice
 {
     public class Set
     {

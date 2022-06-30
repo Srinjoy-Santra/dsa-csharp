@@ -1,10 +1,12 @@
-using dsa.leetcode;
-using Xunit;
+
 
 /*
     Best Practices : https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
 */
-namespace tests
+
+using DSA.leetcode;
+
+namespace Test
 {
     public class UTAddBinary
     {

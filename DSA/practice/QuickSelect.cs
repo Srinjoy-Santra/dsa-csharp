@@ -1,6 +1,4 @@
-using System;
-
-namespace dsa.practice;
+namespace DSA.practice;
 
 /*
  * Similar question: https://leetcode.com/problems/kth-largest-element-in-an-array/
