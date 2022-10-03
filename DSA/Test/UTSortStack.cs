@@ -13,7 +13,7 @@ public class UTSortStack
         //Act
         var result = stack.IsEmpty();
         //Assert
-        Assert.Equal(true, result);
+        Assert.True(result);
         
         
         //Act

@@ -1,5 +1,6 @@
 namespace DSA.leetcode;
 
+// https://leetcode.com/problems/longest-palindromic-substring/submissions/
 public class LongestPalindromicSubstring
 {
     private static int low=0, maxLen=0;

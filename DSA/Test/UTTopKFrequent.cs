@@ -18,6 +18,8 @@ public class UTTopKFrequent
         Assert.Equal(expected, result);
     }
     
+    
+    [Fact]
     public void Solution_Example2_ReturnsExpected()
     {
         //Arrange

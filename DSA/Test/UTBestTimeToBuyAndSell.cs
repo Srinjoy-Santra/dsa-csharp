@@ -14,7 +14,7 @@ namespace Test
         {
             //Arrange
             //Act
-            var result = BestTimeToBuyAndSellStock.MaxProfit(prices);
+            var result = BestTimeToBuyAndSellStock.Solution(prices);
             //Assert
             Assert.Equal(expected, result);
         }

@@ -7,11 +7,6 @@
          <DefaultItemExcludes>$(DefaultItemExcludes);Test/**</DefaultItemExcludes>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="leetcode" />
-      <Folder Include="practice" />
-    </ItemGroup>
-
     
 
 </Project>

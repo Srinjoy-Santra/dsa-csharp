@@ -6,17 +6,17 @@ namespace DSA.leetcode
 {
     public class BestTimeToBuyAndSellStock
     {
-        public static int MaxProfit(int[] prices) {
-            int buy = 0, max = 0;
-            for(int now=0;now<prices.Length;now++)
+        public static int Solution(int[] prices) {
+            int buy = 0, sell = 1, maxProfit = 0;
+            while(sell < prices.Length)
             {
-                if(prices[now] < prices[buy])
-                {
-                    now=buy;
-                }
-                max = Math.Max(max, prices[now] - prices[buy]);
+                if (prices[buy] < prices[sell])
+                    maxProfit = Math.Max(maxProfit, prices[sell] - prices[buy]);
+                else
+                    buy = sell;
+                sell++;
             }
-            return max;
+            return maxProfit;
         }
     }
 }

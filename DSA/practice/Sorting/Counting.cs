@@ -1,11 +1,11 @@
-namespace DSA.practice;
+namespace DSA.practice.Sorting;
 
 /*
  * Resources :
  * https://www.youtube.com/watch?v=pEJiGC-ObQE
  * https://www.youtube.com/watch?v=1mh2vilbZMg
  */
-public class CountingSort
+public class Counting
 {
     // stable?
     private static int[] MySort(int[] arr, int range)
