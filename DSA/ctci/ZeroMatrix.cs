@@ -1,5 +1,7 @@
 namespace DSA.ctci;
 
+// https://leetcode.com/problems/set-matrix-zeroes/
+
 public class ZeroMatrix
 {
     public static void Solution(int[,] matrix)
