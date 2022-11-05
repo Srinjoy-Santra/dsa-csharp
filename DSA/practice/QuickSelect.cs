@@ -10,22 +10,18 @@ public class QuickSelect
 {
     private int CreatePartition(int[] arr, int low, int high)
     {
-        int pivot = arr[high], pivotIndex = low,temp;
+        int pivot = arr[high], pivotIndex = low;
 
         for (int i = low; i <= high; i++)
         {
             if (arr[i] < pivot)
             {
-                temp = arr[i];
-                arr[i] = arr[pivotIndex];
-                arr[pivotIndex] = temp;
+                (arr[i], arr[pivotIndex]) = (arr[pivotIndex],  arr[i]);
                 pivotIndex++;
             }
         }
-
-        temp = arr[pivotIndex];
-        arr[pivotIndex] = arr[high];
-        arr[high] = temp;
+        
+        (arr[high], arr[pivotIndex]) = (arr[pivotIndex],  arr[high]);
 
         return pivotIndex;
     }

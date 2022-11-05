@@ -23,8 +23,6 @@ public class TwoSum
             if(!dict.ContainsKey(target - nums[i]))
                 dict.Add(target - nums[i], i);
         }
-
-        
         return result;
         
     }
