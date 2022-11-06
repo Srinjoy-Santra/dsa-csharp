@@ -11,19 +11,19 @@ public class CombinationSum
         IList<int> currentCombination = new List<int>();
         int index= 0;
         
-        TraverseCombinations(candidates, target, index, ref currentCombination, ref targetedCombinations);
+        TraverseCombinations(candidates, target, index,  currentCombination,  targetedCombinations);
         Console.WriteLine("=>"+targetedCombinations.Count);
         Print(targetedCombinations, currentCombination);
         return targetedCombinations;
     }
     
-    private static void TraverseCombinations(int[] candidates, int target, int index, ref IList<int> currentCombination, ref IList<IList<int>> targetedCombinations) 
+    private static void TraverseCombinations(int[] candidates, int target, int index,  IList<int> currentCombination,  IList<IList<int>> targetedCombinations) 
     {
         if(index == candidates.Length)
         {
             if(target == 0)
             {
-                // copy the value, instead of assigning the reference
+                // copy the value, instead of assigning the erence
                 targetedCombinations.Add(new List<int>(currentCombination));
                 //Console.WriteLine(string.Join(",", currentCombination));
                 //Print(targetedCombinations);
@@ -36,13 +36,13 @@ public class CombinationSum
         {
             currentCombination.Add(candidate);
             Print(targetedCombinations, currentCombination,35);
-            TraverseCombinations(candidates, target-candidate, index, ref currentCombination, ref targetedCombinations);
+            TraverseCombinations(candidates, target-candidate, index,  currentCombination,  targetedCombinations);
             Print(targetedCombinations, currentCombination, 37 );
             currentCombination.RemoveAt(currentCombination.Count - 1);
             //Console.WriteLine("="+targetedCombinations.Count);
         }
         Print(targetedCombinations, currentCombination, 41);
-        TraverseCombinations(candidates, target, index+1, ref currentCombination, ref targetedCombinations);
+        TraverseCombinations(candidates, target, index+1,  currentCombination,  targetedCombinations);
        
     }
     
