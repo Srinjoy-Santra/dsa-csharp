@@ -4,28 +4,11 @@ namespace DSA.leetcode;
 
 public class ThreeSum
 {
-    private class HashSetEqComparer : EqualityComparer<List<int>>
-    {
-        public override bool Equals(List<int> x, List<int> y)
-        {
-            if(x.Count != y.Count)
-                return false;
-            for(var i=0;i<x.Count;i++)
-            {
-                if(x[i] != y[i])
-                    return false;
-            }
-            return true;
-        }
-
-        public override int GetHashCode(List<int> list) 
-            => string.Join(",", list).GetHashCode();
-    }
     
     public static IList<IList<int>> Solution(int[] nums) {
         Array.Sort(nums);
         
-        var result = new HashSet<List<int>>(new HashSetEqComparer());
+        var result = new List<IList<int>>();
         
         for(int i=0;i<nums.Length-2;i++)
         {
@@ -50,6 +33,7 @@ public class ThreeSum
                 }
             }     
         }
-        return new List<IList<int>>(result);
+
+        return result;
     }
 }
