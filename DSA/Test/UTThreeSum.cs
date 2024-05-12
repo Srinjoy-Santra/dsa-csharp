@@ -6,7 +6,7 @@ namespace Test;
 public class UTThreeSum
 {
     [Fact]
-    public void Solution_TwoSum_ExampleOne_ReturnsExpected()
+    public void Solution_ThreeSum_ExampleOne_ReturnsExpected()
     {
         //Arrange
         int[] nums = { -1, 0, 1, 2, -1, -4 };
@@ -23,7 +23,7 @@ public class UTThreeSum
     }
     
     [Fact]
-    public void Solution_TwoSum_ExampleTwo_ReturnsExpected()
+    public void Solution_ThreeSum_ExampleTwo_ReturnsExpected()
     {
         //Arrange
         int[] nums = { 0, 1, 1};
@@ -36,7 +36,7 @@ public class UTThreeSum
     }
     
     [Fact]
-    public void Solution_TwoSum_ExampleThree_ReturnsExpected()
+    public void Solution_ThreeSum_ExampleThree_ReturnsExpected()
     {
         //Arrange
         int[] nums = { 0,0,0 };
