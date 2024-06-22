@@ -24,6 +24,5 @@ public class MaxSumSubArrayOfSizeK
         }
         return maxSum;
     }
-
 }
 

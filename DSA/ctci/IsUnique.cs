@@ -1,6 +1,7 @@
 
 namespace DSA.ctci;
 
+// https://leetcode.com/problems/contains-duplicate/description/
 public class IsUnique
 {
     public static bool Solution(string str)
@@ -12,7 +13,6 @@ public class IsUnique
                 return false;
             checker[c] = true;
         }
-
         return true;
     }
 }
