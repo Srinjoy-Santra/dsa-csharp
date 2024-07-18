@@ -35,13 +35,13 @@ public class CombinationSum
         if (target >= candidate)
         {
             currentCombination.Add(candidate);
-            Print(targetedCombinations, currentCombination,35);
+            //Print(targetedCombinations, currentCombination,35);
             TraverseCombinations(candidates, target-candidate, index,  currentCombination,  targetedCombinations);
-            Print(targetedCombinations, currentCombination, 37 );
+            //Print(targetedCombinations, currentCombination, 37 );
             currentCombination.RemoveAt(currentCombination.Count - 1);
             //Console.WriteLine("="+targetedCombinations.Count);
         }
-        Print(targetedCombinations, currentCombination, 41);
+        //Print(targetedCombinations, currentCombination, 41);
         TraverseCombinations(candidates, target, index+1,  currentCombination,  targetedCombinations);
        
     }

@@ -5,6 +5,7 @@ public class TopKFrequent
 {
     public static int[] Solution(int[] nums, int k) {
         
+        // calculating frequency of all nums
         Dictionary<int,int> frequencies = new();
     
         foreach(int i in nums)
@@ -15,6 +16,7 @@ public class TopKFrequent
                 frequencies[i]=1;
         }
     
+        // mapping computed frequency to the numbers
         var bucket = new List<int>[nums.Length+1];
         foreach(var frequency in frequencies)
         {
@@ -23,8 +25,9 @@ public class TopKFrequent
             bucket[frequency.Value].Add(frequency.Key);
         }
     
+        //Adding to top k result based on count
         List<int> result = new();
-    
+        // nums.Length is the highest frequency that can be, and decreases till we get k elements in result
         for(int i=nums.Length; result.Count<k;i--)
         {
             if(bucket[i] != null)
