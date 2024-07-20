@@ -3,6 +3,9 @@ namespace DSA.leetcode;
 // https://leetcode.com/problems/product-of-array-except-self/
 
 public class ProductExceptSelf {
+    
+    // Compute product by shifting one element to right
+    // Compute product back by shifting one element to the left
     public static int[] Solution(int[] nums) {
         int prod =1;
         int[] res = new int[nums.Length];
