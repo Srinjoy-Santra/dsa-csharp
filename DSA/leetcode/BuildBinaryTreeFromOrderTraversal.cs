@@ -1,8 +1,18 @@
+/*
+---
+problem: Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.
+tags:
+  - array
+  - medium
+  - leetcode
+  - tree
+link: // https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+---
+*/
+
 using DSA.practice.Trees.BinaryTrees;
 
 namespace DSA.leetcode;
-
-// https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 
 public class BuildBinaryTreeFromOrderTraversal
 {

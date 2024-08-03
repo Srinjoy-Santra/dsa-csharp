@@ -1,6 +1,17 @@
-
-
-// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+/*
+---
+problem: You are given an array prices where prices[i] is the price of a given stock on the ith day.
+tags:
+  - array
+  - dynamic-programming
+  - easy
+  - leetcode
+  - sliding-window
+  - blind75
+  - neetcode
+link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+---
+*/
 
 namespace DSA.leetcode
 {

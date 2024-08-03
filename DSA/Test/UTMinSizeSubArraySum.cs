@@ -13,7 +13,7 @@ public class UTMinSizeSubArraySum
     {
         //Arrange
         //Act
-        var result = MinSizeSubArraySum.Solution(array, k);
+        var result = MinSizeSubArraySum.Solution2(array, k);
         //Assert
         Assert.Equal(expected, result);
     }

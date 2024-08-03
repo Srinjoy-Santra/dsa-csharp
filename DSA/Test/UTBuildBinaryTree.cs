@@ -3,6 +3,7 @@ using DSA.practice.Trees.BinaryTrees;
 
 namespace Test;
 
+// INCOMPLETE
 public class UTBuildBinaryTree
 {
 

@@ -1,10 +1,16 @@
+/*
+---
+Problem: Given an array of positive numbers and a positive number ‘k’, find the maximum sum of any contiguous subarray of size ‘k’.
+Link:
+Tags: ['sliding-window', 'easy', 'grokking']
+Similar: https://leetcode.com/problems/maximum-subarray/description/
+--- 
+*/
+
 namespace DSA.grokking;
 
 using System;
-/*
- * Given an array of positive numbers and a positive number ‘k’,
- * find the maximum sum of any contiguous subarray of size ‘k’.
- */
+
 public class MaxSumSubArrayOfSizeK
 {
 
@@ -22,6 +28,22 @@ public class MaxSumSubArrayOfSizeK
                 start++;
             }
         }
+        return maxSum;
+    }
+
+    public static int Solution2(int[] arr, int k)
+    {
+        int maxSum = 0, sum=0;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (i >= k)
+            {
+                maxSum = Math.Max(sum, maxSum);
+                sum -= arr[i - k];
+            }
+            sum += arr[i];
+        }
+
         return maxSum;
     }
 }

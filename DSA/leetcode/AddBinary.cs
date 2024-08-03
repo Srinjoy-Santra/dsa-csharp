@@ -1,6 +1,15 @@
-using System.Text;
+/*
+---
+problem: Given two binary strings a and b, return their sum as a binary string.
+tags:
+  - bit-manipulation
+  - easy
+  - leetcode
+link: https://leetcode.com/problems/add-binary/
+---
+*/
 
-// https://leetcode.com/problems/add-binary/
+using System.Text;
 
 namespace DSA.leetcode
 {

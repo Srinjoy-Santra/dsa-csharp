@@ -11,7 +11,7 @@ public class UTMaxSumSubArrayOfSizeK
     {
         //Arrange
         //Act
-        var result = MaxSumSubArrayOfSizeK.Solution(array, k);
+        var result = MaxSumSubArrayOfSizeK.Solution2(array, k);
         //Assert
         Assert.Equal(expected, result);
     }

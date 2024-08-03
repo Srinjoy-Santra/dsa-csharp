@@ -1,6 +1,16 @@
+/*
+---
+problem: Given two non-negative integers, num1 and num2 represented as string, return the sum of num1 and num2 as a string.
+tags:
+  - bit-manipulation
+  - easy
+  - leetcode
+link: https://leetcode.com/problems/add-strings/
+---
+*/
+
 using System.Text;
 
-// https://leetcode.com/problems/add-strings/
 
 namespace DSA.leetcode
 {

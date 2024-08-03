@@ -1,8 +1,17 @@
+/*
+---
+problem: Given two binary strings a and b, return their sum as a binary string.
+tags:
+  - array
+  - backtracking
+  - medium
+  - leetcode
+link: https://leetcode.com/problems/combination-sum/
+---
+*/
 using System.Text;
 
 namespace DSA.leetcode;
-
-// https://leetcode.com/problems/combination-sum/
 
 public class CombinationSum
 {
@@ -23,7 +32,7 @@ public class CombinationSum
         {
             if(target == 0)
             {
-                // copy the value, instead of assigning the erence
+                // copy the value, instead of assigning the reference
                 targetedCombinations.Add(new List<int>(currentCombination));
                 //Console.WriteLine(string.Join(",", currentCombination));
                 //Print(targetedCombinations);
