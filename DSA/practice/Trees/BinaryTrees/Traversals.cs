@@ -52,5 +52,11 @@ public class Traversals
         t.PreOrder(root);
         Console.WriteLine("\n"+nameof(PostOrder));
         t.PostOrder(root);
+        
+        Console.WriteLine("\n Visualize");
+        Visualization v = new();
+        Console.WriteLine(v.Draw(root));
+
+
     }
 }
