@@ -14,16 +14,16 @@ public class WordSearch
         {
             if(board[i][j] == word[k])
             {
-                if(BackTrack(board, i,j, word, visit))
+                if(BackTrack(board, i,j, word, visit, k))
                     return true;
             }
         }
         return false;
     }
 
-    private  bool BackTrack(char[][]board, int i, int j, string word, BitArray visit)
+    private  bool BackTrack(char[][]board, int i, int j, string word, BitArray visit, int k)
     {
-        if(word.Length == 0)
+        if(k == word.Length)
             return true;
 
         int m = board.Length;
@@ -32,24 +32,20 @@ public class WordSearch
             return false;
         Console.WriteLine(i+","+ j);
 
-        if(word[0] != board[i][j])
+        if(word[k] != board[i][j])
             return false;
         
-        if(visit.Get(i*m+j))
+        if(visit.Get(i*n+j))
             return false;
 
-        visit.Set(i*m+j, true);
-        
-        string nw = word.Substring(1);
-        Console.WriteLine(word[0]);
-
+        visit.Set(i*n+j, true);
         
         // only vertical and horizontal search
-        bool exists = BackTrack(board, i-1, j, nw, visit) 
-                      || BackTrack(board, i, j-1, nw, visit) || BackTrack(board, i, j+1, nw, visit) 
-                      || BackTrack(board, i+1, j, nw, visit);
+        bool exists = BackTrack(board, i-1, j, word, visit, k+1) 
+                      || BackTrack(board, i, j-1, word, visit, k+1) || BackTrack(board, i, j+1, word, visit, k+1) 
+                      || BackTrack(board, i+1, j, word, visit, k+1);
 
-        visit.Set(i*m+j, false);
+        visit.Set(i*n+j, false);
         return exists;
     }
 
@@ -81,7 +77,20 @@ public class WordSearch
         
         board = new[] { new[] { 'A', 'B', 'C','E' }, new[] { 'S', 'F', 'E', 'S' }, new []{'A','D', 'E', 'E'} };
         word = "ABCESEEEFS";
+        //Console.WriteLine(new WordSearch().Exist(board, word));
+
+        board = new[]
+        {
+            new[]{ 'A', 'A', 'A', 'A', 'A', 'A' },
+            new[]{ 'A', 'A', 'A', 'A', 'A', 'A' },
+            new[]{ 'A', 'A', 'A', 'A', 'A', 'A' },
+            new[]{ 'A', 'A', 'A', 'A', 'A', 'A' }, 
+            new[]{ 'A', 'A', 'A', 'A', 'A', 'A' },
+            new[]{ 'A', 'A', 'A', 'A', 'A', 'A' }
+        };
+        word = "AAAAAAAAAAAAAAB";
         Console.WriteLine(new WordSearch().Exist(board, word));
+
 
     }
 }
