@@ -1,6 +1,24 @@
-namespace DSA.leetcode;
+// ---
+// problem: Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+// tags:
+//   - array
+//   - hash
+//   - medium
+//   - leetcode
+// link: https://leetcode.com/problems/top-k-frequent-elements/
+//
+// jupyter:
+//   jupytext:
+//     cell_metadata_filter: -all
+//     formats: md,cs:light
+//     text_representation:
+//       extension: .cs
+//       format_name: light
+//       format_version: '1.5'
+//       jupytext_version: 1.16.7
+// ---
 
-// https://leetcode.com/problems/top-k-frequent-elements/submissions/
+namespace DSA.leetcode;
 public class TopKFrequent
 {
     public static int[] Solution(int[] nums, int k) {
@@ -19,10 +37,15 @@ public class TopKFrequent
         // mapping computed frequency to the numbers
         var bucket = new List<int>[nums.Length+1];
         foreach(var frequency in frequencies)
-        {
-            if(bucket[frequency.Value] == null)
-                bucket[frequency.Value] = new List<int>();
+        { 
+            // null coalescing operator
+            bucket[frequency.Value] ??= new List<int>();
             bucket[frequency.Value].Add(frequency.Key);
+            
+            // Alternative 
+            // if(bucket[frequency.Value] == null) 
+            //    bucket[frequency.Value] = new List<int>();
+            //bucket[frequency.Value].Add(frequency.Key);
         }
     
         //Adding to top k result based on count
@@ -30,8 +53,11 @@ public class TopKFrequent
         // nums.Length is the highest frequency that can be, and decreases till we get k elements in result
         for(int i=nums.Length; result.Count<k;i--)
         {
-            if(bucket[i] != null)
-                result.AddRange(bucket[i]);
+            // null conditional operator
+            bucket[i]?.ForEach(result.Add);
+            
+            //if(bucket[i] != null)
+            // result.AddRange(bucket[i]);
         }
     
         return result.ToArray();

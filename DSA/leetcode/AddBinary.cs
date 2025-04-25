@@ -1,13 +1,22 @@
-/*
----
-problem: Given two binary strings a and b, return their sum as a binary string.
-tags:
-  - bit-manipulation
-  - easy
-  - leetcode
-link: https://leetcode.com/problems/add-binary/
----
-*/
+// ---
+// problem: Given two binary strings a and b, return their sum as a binary string.
+// tags:
+// - bit-manipulation
+// - easy
+// - leetcode
+// link: https://leetcode.com/problems/add-binary/
+// jupyter:
+//   jupytext:
+//     cell_metadata_filter: -all
+//     formats: md,cs:light
+//     text_representation:
+//       extension: .cs
+//       format_name: light
+//       format_version: '1.5'
+//       jupytext_version: 1.16.7
+// ---
+// +
+
 
 using System.Text;
 

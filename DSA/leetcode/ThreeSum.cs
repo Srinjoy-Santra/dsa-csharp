@@ -1,6 +1,23 @@
+// ---
+// problem: Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+// link: https://leetcode.com/problems/3sum/
+// tags: 
+//   - array
+//   - two-pointers
+//
+// jupyter:
+//   jupytext:
+//     cell_metadata_filter: -all
+//     formats: md,cs:light
+//     text_representation:
+//       extension: .cs
+//       format_name: light
+//       format_version: '1.5'
+//       jupytext_version: 1.16.7
+// ---
+
 namespace DSA.leetcode;
 
-// https://leetcode.com/problems/3sum/
 
 public class ThreeSum
 {
