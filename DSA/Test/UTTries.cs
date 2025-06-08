@@ -9,7 +9,7 @@ public class UTTries
         //Arrange
         const string firstNum = "1010", secondNum = "1011", expected = "10101";
         //Act
-        //var result = Tries.Solution(firstNum, secondNum);
+        //var result = Tries.BruteForce(firstNum, secondNum);
         //Assert
         //Assert.Equal(expected, result);
     }

@@ -1,4 +1,22 @@
-﻿namespace DSA.leetcode;
+// -*- coding: utf-8 -*-
+// ---
+// problem: Given an integer input array heights representing the heights of vertical lines, write a function that returns the maximum area of water that can be contained by two of the lines (and the x-axis). The function should take in an array of integers and return an integer.
+// link: https://leetcode.com/problems/container-with-most-water/
+// tags: 
+//   - array
+//   - two-pointers
+// jupyter:
+//   jupytext:
+//     cell_metadata_filter: -all
+//     formats: md,cs:light
+//     text_representation:
+//       extension: .cs
+//       format_name: light
+//       format_version: '1.5'
+//       jupytext_version: 1.16.7
+// ---
+
+namespace DSA.leetcode;
 
 public class ContainerWithMostWater
 {
